@@ -8,7 +8,7 @@ app.use(express.json());
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 // Correct model name for Gemini 2.5 Flash
-const GEMINI_MODEL = "gemini-2.5-flash-preview-04-17";
+const GEMINI_MODEL = "gemini-2.5-flash";
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
 
 function buildPrompt(dish) {
